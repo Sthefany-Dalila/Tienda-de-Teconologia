@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStore - Inicio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="welcome-screen">
+    <div class="grid-overlay" id="grid"></div>
+    <div class="welcome-content" id="welcome-box">
+      <h1>Bienvenido a la Tienda de Tecnología</h1>
+      <p>Hardware informático, laptops, celulares y periféricos.</p>
+      <button class="btn-start" onclick="startApp()">Continuar al Catálogo</button>
+    </div>
+  </div>
+
+  <header>
+    <div class="logo"><i class="fa-solid fa-microchip"></i> TechStore Pro</div>
+    <nav>
+      <a href="index.html" class="active">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="carrito.html">Mi Carrito (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="container hero-section">
+    <h2>Explora el Futuro de la Tecnología</h2>
+    <p>Encuentra laptops, tarjetas de vídeo RTX, consolas, celulares y más al mejor precio.</p>
+    <a href="productos.html" class="btn-primary">Ver Catálogo Completo</a>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

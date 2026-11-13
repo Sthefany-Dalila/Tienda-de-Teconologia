@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStore - Catálogo</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><i class="fa-solid fa-microchip"></i> TechStore Pro</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html" class="active">Productos</a>
+      <a href="carrito.html">Mi Carrito (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <div class="category-bar">
+    <button class="cat-btn active" onclick="filterCategory('all')">Todos</button>
+    <button class="cat-btn" onclick="filterCategory('laptops')">Laptops / PCs</button>
+    <button class="cat-btn" onclick="filterCategory('celulares')">Celulares</button>
+    <button class="cat-btn" onclick="filterCategory('consolas')">Consolas</button>
+    <button class="cat-btn" onclick="filterCategory('componentes')">Componentes / RAM / RTX</button>
+    <button class="cat-btn" onclick="filterCategory('audio')">Audio y Proyectores</button>
+    <button class="cat-btn" onclick="filterCategory('industrial')">Industrial / Impresoras</button>
+  </div>
+
+  <main class="container">
+    <div class="products-grid" id="products-container"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

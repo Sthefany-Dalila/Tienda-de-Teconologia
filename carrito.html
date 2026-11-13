@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStore - Mi Carrito</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><i class="fa-solid fa-microchip"></i> TechStore Pro</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="carrito.html" class="active">Mi Carrito (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2 style="margin-bottom: 1.5rem;"><i class="fa-solid fa-cart-shopping"></i> Tu Carrito de Compras</h2>
+    <div class="cart-box">
+      <div id="cart-items-page"></div>
+      <div class="cart-total" id="cart-total-page">Total: $0.00</div>
+      <button class="btn-whatsapp" onclick="sendWhatsApp()">
+        <i class="fa-brands fa-whatsapp"></i> Finalizar Compra por WhatsApp (8000-0000)
+      </button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
